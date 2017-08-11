@@ -16,6 +16,7 @@ const reducer = combineReducers({
 const store = createStore(
   reducer
 );
+
 const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
