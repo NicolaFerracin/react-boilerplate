@@ -1,5 +1,5 @@
 {
-  "name": "reactBoilerplate",
+  "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "A React Router boilerplate complete with linter, webpack dev server, configurations, babel, testing and a scalable file structure.",
   "main": "index.js",
