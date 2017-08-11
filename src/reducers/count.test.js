@@ -4,7 +4,7 @@ import { INCREASE, DECREASE } from '../constants';
 
 let state = undefined;
 describe('reducers', () => {
-  describe('counter', () => {
+  describe('count', () => {
     it('should provide the initial state', () => {
         state = count( state, { type: undefined });
         expect(state.number).toBe(1)
