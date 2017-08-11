@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { increase, decrease } from '../../actions/count';
@@ -18,6 +17,12 @@ class Counter extends Component {
     );
   }
 }
+
+Counter.propTypes = {
+  'number': React.PropTypes.number,
+  'increase': React.PropTypes.func,
+  'decrease': React.PropTypes.func
+};
 
 export default connect(
   state => ({ 'number': state.count.number }),
