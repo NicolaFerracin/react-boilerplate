@@ -4,7 +4,6 @@ const initialState = {
   'number': 1
 };
 
-console.log('passing here', initialState)
 export default function update(state = initialState, action) {
   if (action.type === INCREASE) {
     return { 'number': state.number + action.amount };
