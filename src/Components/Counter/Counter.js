@@ -1,27 +1,17 @@
+/* eslint-disable */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { increase, decrease } from '../../actions/count';
 
-/**
- * Main route
- *
- * @class Main
- * @extends {Component}
- */
 class Counter extends Component {
-  constructor(props) {
-    super(props);
-  }
-  /**
-       * Renders main route
-       * 
-       * @return {JSX.Element} Main route
-       */
   render() {
-    const number = this.props;
+    const { number, increase, decrease } = this.props;
     return (
       <div>
-                Some state changes: {number}
+        Some state changes:
+        <br/>
+        {number}
+        <br/>
         <button onClick={() => increase(1)}>Increase</button>
         <button onClick={() => decrease(1)}>Decrease</button>
       </div>
@@ -30,8 +20,6 @@ class Counter extends Component {
 }
 
 export default connect(
-  state => {
-      return ({ 'number': state.count.number })
-  },
+  state => ({ 'number': state.count.number }),
   { increase, decrease }
 )(Counter);

@@ -10,7 +10,7 @@ module.exports = function(options) {
         cache: true,
         devtool: 'source-map',
         entry: [
-            './src/app.js'
+            './src/index.js'
         ],
         output: {
             path: path.join(__dirname, '../dist'),

@@ -2,21 +2,13 @@ import React, { Component } from 'react';
 import Counter from '../../Components/Counter/Counter';
 import './Main.scss';
 
-/**
- * Main route
- *
- * @class Main
- * @extends {Component}
- */
 class Main extends Component {
-  /**
-   * Renders main route
-   * 
-   * @return {JSX.Element} Main route
-   */
   render() {
     return (
-      <Counter />
+      <div>
+        <h1 className="salutation">Hello World!</h1>
+        <Counter />
+      </div>
     );
   }
 }
