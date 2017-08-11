@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { increase, decrease } from '../../actions/count';
+import PropTypes from 'prop-types';
 
 class Counter extends Component {
   render() {
@@ -19,9 +20,9 @@ class Counter extends Component {
 }
 
 Counter.propTypes = {
-  'number': React.PropTypes.number,
-  'increase': React.PropTypes.func,
-  'decrease': React.PropTypes.func
+  'number': PropTypes.number,
+  'increase': PropTypes.func,
+  'decrease': PropTypes.func
 };
 
 export default connect(
