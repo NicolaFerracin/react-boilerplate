@@ -1,6 +1,6 @@
 # React App Boilerplate
 
-This is a boilerplate for a React Router app, complete with linter, webpack dev server, configurations, babel, testing and a scalable file structure.
+This is a boilerplate for a React Redux Router app, complete with linter, webpack dev server, configurations, babel, testing and a scalable file structure.
 
 ## How to use
 
@@ -33,54 +33,14 @@ npm run test:watch
 
 ### Main dependencies
 
-- React & React Router
+- React
+- React Router
+- Redux
 - Webpack
 - ESLint
 - Babel
 - SASS
-- Jest
-
-### Project Structure
-
-- Config files can be found here
-```
-|-- .babelrc                    // Babel config
-|-- .eslintrc                   // Eslint config
-|-- webpack.config.js           // Webpack entry point
-|-- webpack                 
-    |-- webpack.loaders.js      // Webpack loaders
-    |-- webpack.local.js        // Webpack local config
-```
-
-- `/src` contains all application files:
-```
-|-- src
-    |-- Components
-        |-- Component1
-            |-- Component1.js        // React component
-            |-- Component1.scss      // Styles for the component
-            |-- Component1.test.js   // Tests for the component
-    |-- Routes
-        |-- Route1
-            |-- Route1.js           // React Route
-            |-- Route1.scss         // Styles for the route
-            |-- Route1.test.js      // Tests for the route
-    |-- css                         // All css dependencies and imports go here
-        |-- bootstrap.min.css
-        |-- foundation.min.css
-        |-- fontawesome.min.css
-    |-- index.html                  // HTML entry point
-    |-- index.js                    // React entry point
-    |-- variables.scss              // SASS Variables
-```
-
-- `/dist` is created by webpack and contains all dist files. By default there is only going to be:
-```
-|-- dist
-    |-- app.js
-    |-- app.js.map
-    |-- index.html
-```
+- Jest and Enzyme
 
 ### Commands
 
@@ -95,6 +55,6 @@ npm run test:watch
 
 ## To implement
  
-- [ ] Redux
-- [ ] Simple +1 -1 counter app
+- [x] Redux
+- [x] Simple +1 -1 counter app
 - [ ] Production webpack config

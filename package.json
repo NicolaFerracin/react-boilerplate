@@ -1,7 +1,7 @@
 {
-  "name": "reactBoilerplate",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "A React Router boilerplate complete with linter, webpack dev server, configurations, babel, testing and a scalable file structure.",
+  "description": "A React Redux Router complete boilerplate Edit.",
   "main": "index.js",
   "scripts": {
     "start": "npm run clean && webpack-dev-server --history-api-fallback --env=local --no-info --open",
