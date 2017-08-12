@@ -3,14 +3,12 @@ import { connect } from 'react-redux';
 import { increase, decrease } from '../../actions/count';
 import PropTypes from 'prop-types';
 
-class Counter extends Component {
+export class Counter extends Component {
   render() {
     const { number, increase, decrease } = this.props;
     return (
       <div>
-        Some state changes:
-        <br/>
-        {number}
+        <p>Some state changes: {number}</p>
         <br/>
         <button onClick={() => increase(1)}>Increase</button>
         <button onClick={() => decrease(1)}>Decrease</button>

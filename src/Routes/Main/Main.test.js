@@ -4,10 +4,10 @@ import { shallow } from 'enzyme';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-const mockStore = configureMockStore([ thunk ]);
+const mockStore = configureMockStore([thunk]);
 const storeStateMock = {
-  myReducer:{
-    someState: 'ABC'
+  'myReducer': {
+    'someState': 'ABC'
   }
 };
 let store;
@@ -21,11 +21,9 @@ describe('<Main/> route test', () => {
     expect(component.find('h1')).toHaveLength(1);
   });
   it('h1 should contain class', () => {
-    const expected = 'salutation';
-    expect(component.find('h1').hasClass(expected)).toEqual(true);
+    expect(component.find('h1').hasClass('salutation')).toEqual(true);
   });
   it('h1 should contain text', () => {
-    const expected = 'Hello World!';
-    expect(component.find('h1').text()).toEqual(expected);
+    expect(component.find('h1').text()).toMatch(/^Hello World!/);
   });
 });
